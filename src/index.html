@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Advice generator app</title>
+
+</head>
+<body class="bg-DarkBlue font-Manrope">
+  <article class="bg-DarkGrayishBlue w-[342px] rounded-xl px-[30px] pt-10 pb-16 mx-auto my-20 text-center relative md:w-[540px]">
+    <h2 class="text-NeonGreen uppercase mb-6 tracking-[4px] text-xs">Advice #<span id="adviceId"></span></h2>
+    <p class="text-LightCyan text-[22px] font-extrabold mb-6" >" <span id="advice"></span> "</p>
+    
+    <picture>
+      <source media="(max-width: 640px)" srcset="../images/pattern-divider-mobile.svg">
+      <source media="(min-width: 641px)" srcset="../images/pattern-divider-desktop.svg">
+      <img class="mx-auto" src="" alt="">
+    </picture>
+    
+
+    <div id="diceBtn" class="bg-NeonGreen w-[66px] h-[66px] rounded-full grid place-content-center absolute bottom-[-33px] left-[138px] cursor-pointer  md:left-[237px] hover:drop-shadow-[0_0px_15px_rgba(0, 0, 0, 0.1)]">
+      <img src="../images/icon-dice.svg" alt="dado">
+    </div>
+  </article>
+  
+  <footer class=" text-LightCyan text-center text-sm">
+    Challenge by <a class="text-NeonGreen" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="text-NeonGreen" href="#">Edinson Rivera</a>.
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
